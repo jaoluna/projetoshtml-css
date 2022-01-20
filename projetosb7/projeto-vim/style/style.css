@@ -1,0 +1,91 @@
+body, html{
+    padding:0;
+    margin:0;
+    font-family:sans-serif;
+    width:99vw;
+    height:100vh;
+}
+
+.container{
+    display:flex;
+    width:90%;
+    margin:50px auto;
+}
+
+header .top {
+    justify-content:space-between;
+    align-items:center;
+    width:90%;
+    height:100%;
+
+}
+
+header .top .menu a{
+    text-decoration:none;
+    font-size:18px;
+    color:#000;
+}
+
+header .top .menu a:nth-child(2){
+    margin:0 50px;
+}
+
+main .heroBox{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+
+}
+
+main .heroImage .image{
+    width:400px;
+    height:400px;
+    background-color:#f0f0f0;
+
+}
+
+main .heroText p{
+   font-size:50px;
+   font-weight:bold;
+   text-align:center;
+
+}
+
+main .middle{
+   text-align:center;
+   font-size:30px;
+   width:100%;
+   display:flex;
+   justify-content:center;
+}
+
+main .wrapper{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+}
+
+main .wrapperbox{
+    width:calc(70%/2 - 80px);
+    margin:25px;
+    height:200px;
+    background-color:#0f0f0f;
+    box-shadow:2px 2px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+footer .container{
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+footer div:first-child p{
+    font-size:22px;
+    
+}
+
+
+
+

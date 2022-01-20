@@ -1,0 +1,90 @@
+*{
+    padding:0;
+    margin:0;
+}
+header{
+    height:100px;
+    background-color:#000;
+    display: flex;
+}
+.container{
+    margin:0 auto;
+    width:1024px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display:flex;
+    list-style:none;
+}
+nav a{
+    margin-right:10px;
+    padding:10px;
+}
+
+.logo a, nav a{
+    color:#fff;
+    text-decoration:none;
+
+}
+nav a:hover{
+    background-color:#c3c3c3;   
+}
+.hero{
+    height:450px;
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    background-color:#000;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:50px;
+    
+}
+.box1{
+    margin-right:20px;
+    margin-top:50px;
+    height:250px;
+    width:250px;
+    background-color:#ddd;
+}
+
+.principal{
+    flex:2;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.box2{
+    margin-top:50px;
+    margin-left:30px;
+    height:250px;
+    width:250px;
+    background-color:bisque;
+}
+
+.secundario{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-secundario{
+    margin-top:20px;
+    height:200px;
+    width:200px;
+    background-color:bisque;
+}
+
+footer{
+    margin-top:10px;
+    background-color:#000;
+    height:50px;
+}
+ footer .copy{
+    color:#FFF;
+    align-items: center;
+    display: flex;
+}

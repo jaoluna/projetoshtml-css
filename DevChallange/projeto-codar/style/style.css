@@ -1,0 +1,456 @@
+:root{
+    --red: #D6000D;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:'Roboto', sans-serif;
+}
+
+body, html{
+    width:100vw;
+    height:100vh;
+    overflow-x: hidden;
+}
+.container{
+    max-width:1024px;
+    width:100%;
+    display: flex;
+    margin:0 auto;
+}
+
+
+header .top{
+    justify-content: space-between;
+    align-items:center;
+    height:100px;
+    width:100%;
+}
+
+header .top .logo{
+    color:var(--red);
+    font-size:23px;
+    font-style:italic;
+}
+header .top .logo span{
+    color:#000;
+}
+header .top nav{
+    margin-top:10px;
+    display:flex;
+    width:100%;
+    height:100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+header .top nav a{
+    text-decoration:none;
+    color:#000;
+    padding:20px;
+    margin-right:20px;
+    font-size:17px;
+}
+
+header .top nav .login{
+    max-width:230px;
+    width:100%;
+    height:65px;
+    background-color:var(--red);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:20px;
+    cursor: pointer;
+}
+header .top nav .login a{
+    color:#FFF;
+    font-weight:700;
+    font-size:18px;
+
+}
+
+.main-flex{
+    justify-content: space-around ;
+    align-items: center;
+    height:80vh;
+}
+
+main .hero-figure{
+    width:45%;
+    height:auto;
+}
+main .hero-figure img{
+    width:100%;
+    height:100%;
+}
+
+
+main .hero-text div:first-child p{
+    font-weight: bold;
+    font-size:26px;
+    margin-bottom:5px;
+}
+
+main .hero-text div:nth-child(2) h1{
+    color:var(--red);
+    font-size:70px;
+    margin-bottom:100px;
+}
+
+main .hero-text div:last-child{
+    max-width:380px;
+    width: 100%;
+    height:65px;
+    background-color:var(--red);
+    border-radius:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+main .hero-text div:last-child a{
+    color:#FFF;
+    text-decoration:none;
+    font-weight: bold;
+    font-size:24px;
+}
+
+main .coding-flex{
+    width:100%;
+    margin-top:50px;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+
+main .coding-flex div:nth-child(2) ul{
+    list-style: none;
+    width:100%;
+    
+}
+main .coding-flex div:nth-child(2) ul li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top:20px;
+    font-size:20px;
+}
+main .coding-flex div:nth-child(2) .circle_red{
+    width:40px;
+    height:40px;
+    background-color:var(--red);
+    border-radius:40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:40px;
+}
+
+main .coding-flex div:nth-child(2) .circle_red img{
+    width:60%;
+    height:auto;
+}
+
+main .coding-flex div:first-child{
+    display:none;
+}
+
+main .coding-flex div:nth-child(3),
+main .coding-flex div:first-child{
+    width:50%;
+    height:auto;
+}
+main .coding-flex div:nth-child(3) img,
+main .coding-flex  div:first-child img{
+    width:100%;
+    height:auto;
+}
+main .contact h3{
+    padding-bottom:10px;
+}
+main .contact form {
+   width:100vw;
+    
+}
+main .contact form input[type=tel]{ 
+    max-width:320px;
+    width:100%;
+    height:75px;
+    background-color:#dcdcdc;
+    border:none;
+    outline:none;
+    border-radius:20px;
+    font-size:30px;
+    padding:35px;
+    
+}
+
+main .contact form input[type=submit]{
+    max-width:320px;
+    width: 100%;
+    height:75px;
+    background-color:var(--red);
+    border:none;
+    border-radius:20px;
+    margin-left:15px;
+    color: #fff;
+    font-size:24px;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+main .empty-space{
+    width:100%;
+    height:270px;
+}
+main .comments{
+    justify-content: space-around;
+    margin-bottom:100px;
+}
+main .comments-box{
+    max-width:450px;
+    width:100%;
+    height:200px;
+    background-color:#dcdcdc;
+    border-radius:20px; 
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+main .comments-box-red{
+    width:75px;
+    height:75px;
+    border-radius:100px;
+    background-color:var(--red);
+    align-self: flex-start;
+    margin-top:30px;
+}
+
+main .comments-box-text{
+    width:70%;
+    height:auto;
+}
+
+main .comments-box-text div:first-child{
+    margin-bottom:20px;
+}
+main .comments-box-text div:last-child h2{
+    margin-bottom:5px;
+    font-weight: normal;
+}
+main .comments-box-text div:last-child p{
+    font-weight: bold;
+}
+
+
+footer{
+    height:450px;
+    width:100%;
+    background-color:#000;
+    color:#fff;
+}
+
+.footer{
+    width:100%;
+    height:100%;
+}
+.footer div{
+    width:calc(100%/4);
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-direction: column;
+    text-align: left;
+}   
+.footer div:first-child h2,
+.footer div:nth-child(2) h2,
+.footer div:nth-child(3) h2,
+.footer div:last-child h2{
+    font-size:40px;
+}
+.footer div:first-child p,
+.footer div:nth-child(2) p{
+    margin-top:25px;
+    width:70%;
+}
+.footer div:nth-child(2) h2{
+    margin-top:5px;
+}
+.footer div:nth-child(3) h2{
+    margin-top:50px;
+}
+.footer div:nth-child(3) a{
+    text-decoration:none;
+    color:#fff;
+    margin-top:20px;
+    display:inline-block
+}
+
+footer .social-icon{
+    width:100%;
+    height:65px;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top:35px;
+    
+}
+.footer div:last-child h2{
+    margin-top: 35px;
+}
+
+footer .social-icon img{
+    background-color:var(--red);
+    border-radius:30px;
+    width:40px;
+    height:40px;
+    display:block;
+    cursor:pointer;
+}
+
+footer .social-icon img:nth-child(2){
+    margin:0 40px; 
+}
+
+
+
+
+
+@media only screen and (max-width:1000px){
+    .container{
+        flex-direction: column;
+    }
+
+    header .top nav{
+        justify-content: center;
+    }
+    header .top nav .login{
+        display:none;
+    }
+
+
+    .main-flex{
+        padding-top:150px;
+    }
+    main .hero-text{
+        display:flex;
+        margin-top:50px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .coding-flex{
+        padding-top:150px;
+    }
+    main .coding-flex div:first-child{
+        display:block;
+        
+    }
+
+    main .coding-flex div:last-child{
+        display:none;
+    }
+    main .contact h3{
+        text-align:center;
+        margin-top:50px;
+        font-size:25px;
+    }
+    main .contact form{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main .contact form input{
+        display:block;
+       
+    }
+    main .contact form input[type=submit]{
+        margin:0;
+        margin-top:20px;
+    }
+
+    main .comments{
+        align-items: center;
+    }
+
+    main .comments div:last-child{
+        margin-top:20px;
+
+    }
+
+    .footer{
+        flex-direction: row;
+    }
+    
+}
+
+
+@media only screen and (max-width:650px){
+    .footer{
+        flex-direction: column;
+    }
+    .footer div{
+        height:calc(100%/4);
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        text-align: left;
+    } 
+    .footer div:first-child{
+        align-items: center;
+        text-align: center;
+    }
+    .footer div:first-child h2{
+        font-size:50px;
+    }
+    .footer div:first-child p{
+        font-size:30px;
+        font-weight: bold;
+        margin-top:10px
+    }
+    .footer div:nth-child(2) p{
+        margin-top:5px;
+    }
+    .footer div:nth-child(2),
+    .footer div:nth-child(3) h2,
+    .footer div:last-child h2{
+        padding-left:50px;
+    }
+    .footer div:nth-child(2) h2,
+    .footer div:nth-child(3) h2,
+    .footer div:last-child h2{
+        font-size:30px;
+    }
+
+
+
+    .footer div:nth-child(3) h2{
+        margin-top:0;
+    }
+    .footer div:nth-child(3) address{
+        margin-left:50px;
+        width:30%;
+    }
+    .footer div:nth-child(3) a{
+        margin-top:5px;
+    }
+
+
+    .footer div:last-child h2{
+        margin-top:0;
+    }
+
+    footer .social-icon{
+        flex-direction: row;
+        margin-top:5px;
+    }
+}
+
+@media only screen and (max-width:510px){
+    main .hero-text h1{
+        text-align: center;
+    }
+}
